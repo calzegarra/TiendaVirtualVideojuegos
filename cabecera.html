@@ -4,56 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FUTURE VIDEO JUEGOS</title>
-    <style>
-        .container {
-            display: flex;
-            align-items: center;
-        }
-        
-        .container img {
-            width: 320px;
-            margin-right: 20px;
-        }
-        
-        .container .text {
-            font-size: 16px;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .container .title {
-            font-weight: bold;
-            margin-right: 10px;
-            cursor: pointer;
-        }
-    </style>
+    <title>FUTURE VIDEO JUEGOS</title>    
 </head>
 
 <body style="background-color: #231f20">
-    <div class="container">
-        <img src="imagenes/logo2.jpg" alt="" width="320px">
-        <div class="text">
-            <p class="title" style="color: #ffffff" onclick="mostrarTexto('mision')">MISIÓN</p>
-            <p id="mision" style="display: none;color: #ffffff">Proporcionar la mejor experiencia de entretenimiento a través de videojuegos de calidad, tanto en venta como en alquiler, satisfaciendo las necesidades de nuestros clientes.</p>
-            <p class="title"  style="color: #ffffff" onclick="mostrarTexto('vision')">VISIÓN</p>
-            <p id="vision" style="display: none;color: #ffffff">Ser el principal destino para los amantes de los videojuegos, ofreciendo una amplia selección y un servicio excepcional, impulsando la pasión por los juegos.</p>
-            <p class="title"  style="color: #ffffff" onclick="mostrarTexto('nosotros')">NOSOTROS</p>
-            <p id="nosotros" style="display: none;color: #ffffff">Somos apasionados por los videojuegos y nos esforzamos por brindar la mejor experiencia a nuestros clientes, creando una comunidad de jugadores apasionados.</p>
-        </div>
-    </div>
-
-    <script>
-        function mostrarTexto(id) {
-            var texto = document.getElementById(id);
-            if (texto.style.display === "none") {
-                texto.style.display = "block";
-            } else {
-                texto.style.display = "none";
-            }
-        }
-    </script>
+    <img src="imagenes/logo2.jpg" alt="" width="320px">       
 </body>
 
 </html>
