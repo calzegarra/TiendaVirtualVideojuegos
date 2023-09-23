@@ -1,21 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FUTURE VIDEO JUEGOS</title>
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
-<frameset rows="21%, 7%, 70%, 7%" border="3">
-    <frame noresize src="paginas/cabecera.html"></frame>
-    <frame noresize src="paginas/menu.html"></frame>
-    <frame noresize src="paginas/contenido.html" name="contenido.html"></frame>
-    <frame noresize src="paginas/piePagina.html"></frame>
-</frameset>
-
 <body>
+    <header>
+    </header>
+        <!-- Cabecera -->
+    <div class="head">
+        <section class="section_header">
+            <table class="center">
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th><ul class="menup"><li><a href="#">Inciar sesión</a></li></ul></th>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                  <h1 class="titulo">Future</h1><br>
+                  <h2 style="font-family: 'Press Start 2P', cursive;">Explora nuevos mundos virtuales</h2>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="2">
+                    <ul class="menup">
+                        <li><a href="#">Tienda</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Contáctenos</a></li>    
+                    </ul>
+                  </td>
 
+                </tr>
+            </table>
+        </section>
+    </div>
+            <!-- Cuerpo de la pagina -->
+            <!-- Seccion 1 -->
+    <div class="container">
+        <section class="section">
+            <nav class="menu_lat">
+                <ul>
+                    <li><a href="paginas/PC.html" target="iframe_contenido">Juegos para PC</a></li>
+                    <li><a href="paginas/Playstation.html" target="iframe_contenido">Juegos para PS</a></li>
+                    <li><a href="paginas/Xbox.html" target="iframe_contenido">Juegos para Xbox</a></li>
+                    <li><a href="paginas/nintendo.html" target="iframe_contenido">Juegos para Nintendo</a></li>
+                    <li><a href="paginas/proxLanzamiento.html" target="iframe_contenido">Próximos lanzamientos</a></li>
+                </ul>
+            </nav>
+            <nav class="sub_container">
+                
+                <iframe src="paginas/contenido.html" name="iframe_contenido">
+                    
+                </iframe>
+            </nav>
+        </section>
+                <!-- Seccion 2 -->
+        <section class="section_2" >
+            <nav class="sub_container_2">
+                <table class="center" style="color:black;">
+                    <tr>
+                        <th><h2 class="subtitle">NOSOTROS</h2></th>
+                    </tr>
+                    <tr>
+                        <th><p>Somos apasionados por los videojuegos y nos esforzamos por brindar la mejor experiencia a nuestros clientes, creando una comunidad de jugadores apasionados.</p></th>
+                    </tr>
+                    <tr>
+                        <th><h2 class="subtitle">MISION</h2></th>
+                    </tr>
+                    <tr>
+                        <th><p>Proporcionar la mejor experiencia de entretenimiento a través de videojuegos de calidad, tanto en venta como en alquiler, satisfaciendo las necesidades de nuestros clientes.</p></th>
+                    </tr>
+                    <tr>
+                        <th><h2 class="subtitle">VISION</h2></th>
+                    </tr>
+                    <tr>
+                        <th><p>Ser el principal destino para los amantes de los videojuegos, ofreciendo una amplia selección y un servicio excepcional, impulsando la pasión por los juegos.</p></th>
+                    </tr>
+                </table> 
+            </nav>
+        </section>
+                <!-- Seccion 3 -->
+        <section class="section_3">     
+            <nav class="sub_container_3">
+                <table class="center">
+                    <tr>
+                        <th><h2 class="subtitle">CONTACTENOS</h2></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th class="article_1">
+                            Av. México 482, La Victoria, Lima, Perú</br>
+                            asalas_future@gmail.com</br>
+
+                            Tel: +51-996125588</br></br>
+
+                            Buscanos en nuestras redes</br></br>
+                            <img style="width: 20%;" src="imagenes/ic_face.png"></img>
+                            <img style="width: 20%;" src="imagenes/ic_inst.png"></img>
+                            <img style="width: 20%;" src="imagenes/ic_what.png"></img>
+                        </th>
+
+                        <th >
+                            <table>
+                                <tr style="text-align: left;">
+                                    <td><label >Nombre</label></td> 
+                                    <td><label >Apellido</label></td> 
+                                </tr> 
+                                <tr >
+                                    <td>
+                                        <input type="text" class="special_textbox" id="txtnombre"> 
+                                    </td>
+                                    <td>
+                                        <input type="text" class="special_textbox" id="txtapellido"> 
+                                    </td> 
+                                </tr> 
+                                <tr style="text-align: left;" >
+                                    <td colspan="2" ><label >Correo</label></td> 
+                                </tr> 
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="text" class="special_textbox"> 
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <td colspan="2" style="text-align: left;"><label>Consola de preferencia</label></td> 
+                                </tr> 
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="radio" name="consola">PC
+                                        <input type="radio" name="consola">Playstation
+                                        <input type="radio" name="consola">Xbox
+                                        <input type="radio" name="consola">Nintendo
+                                    </td>
+                                </tr>   
+                                <tr>
+                                    <td colspan="2" style="text-align: left;"><label>Comentanos tu solicitud</label></td> 
+
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <textarea rows="4" class="special_textbox" cols="50"></textarea>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+  
+                                    <td style="text-align: right;">
+                                        <input class="button_1" type="button" value="Enviar">
+                                    </td>
+                                </tr> 
+                            </table>
+                        </th>
+                    </tr>
+                </table>
+            </nav>
+        </section>
+    </div>
+            <!-- Pie de la pagina -->
+    <footer>
+        <p>2023 FUTURE Videojuegos. Todos los derechos reservados ©</p>
+    </footer>
 </body>
-
 </html>
