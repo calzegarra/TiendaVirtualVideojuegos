@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NINTENDO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NINTENDO</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 <body>
-    <center>
-    <table>
-        <tr>
-            <td><a href=""><img src="../imagenes/resident.jpg" alt="" width="400px"><br><center style="color: azure; ">Resident Evil 3 Switch</center></a></td>
-            <td><a href=""><img src="../imagenes/fortnite.jpg" alt="" width="400px"><br><center style="color: azure; ">Fortnite - Pack de Transformers Switch</center></a></td>            
-        </tr>
-    </table>
-    </center>
+  <div class="owl-carousel">
+    <div class="item">
+      <img src="../imagenes/resident.jpg" alt="Resident Evil 3 Switch">
+    </div>
+    <div class="item">
+      <img src="../imagenes/fortnite.jpg" alt="Fortnite - Pack de Transformers Switch">
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $('.owl-carousel').owlCarousel({
+        items: 1, 
+        loop: true, 
+        autoplay: true, 
+        autoplayTimeout: 2000, 
+        dots: true, 
+      });
+    });
+  </script>
 </body>
 </html>
