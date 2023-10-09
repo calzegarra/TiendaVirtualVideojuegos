@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <script src="../js/efectos.js"></script>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    </header>
+        <!-- Cabecera -->
+    <div class="head">
+        <section class="section_header">
+            <table class="center">
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th><ul class="menup"><li><a href="#">Inciar sesión</a></li></ul></th>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                  <h1 class="titulo">Future</h1><br>
+                  <h2 style="font-family: 'Press Start 2P', cursive;">Explora nuevos mundos virtuales</h2>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="2">
+                    <ul class="menup">
+                        <li><a href="../index.html">Tienda</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Contáctenos</a></li>    
+                    </ul>
+                  </td>
+                </tr>
+            </table>
+        </section>
+    </div>
+            <!-- Cuerpo del -->
+                <!-- Seccion Login -->
+    <form action="">
+        <section class="section_3">     
+            <nav>
+                <table class="login_box"  border="0">
+                    <tr>
+                        <th><h2 class="subtitle">INICIAR SESION</h2></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <table border="0">
+                                <tr style="text-align: left;">
+                                    <td></td> 
+                                    <td rowspan="4" style="text-align: center;font-family: 'Press Start 2P', cursive;font-size: 14px;"><h1>¿Primera vez <br><br>
+                                         en FUTURE?</h1></td>
+                                </tr> 
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="Usuario" class="special_textbox" id="txtusuario"> 
+                                    </td>
+                                </tr> 
+                                <tr style="text-align: left;" >
+                                    <td></td> 
+                                </tr> 
+                                <tr>
+                                    <td>
+                                        <input type="password"  placeholder="Contraseña" class="special_textbox" id="txtclave"> 
+                                    </td>
+                                </tr> 
+
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="rdRecordar" value="Olvide mi contraseña" id="rdRecordar" >Olvide mi contraseña
+                                    </td>
+
+                                    <td style="text-align: center;" colspan="2">
+                                        <input  style="display: none; text-align: center;" class="button_1" type="button" id="btnEnviarCorreo" value="Enviar correo" onclick="validarCorreo(this)">
+    
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <td style="text-align: center;" colspan="2">
+                                        <label for="rdRecordar" id="lbladv">* Se enviará un correo, solo si el usuario existe</label>
+                                    </td>
+                                </tr> 
+
+                                <tr>
+                                    <td style="text-align: right;">
+                                        <input class="button_1" type="button" value="Iniciar Sesión" onclick="Autenticar(this)">
+                                    </td>
+                                    <td style="text-align: right;">
+                                        <input class="button_1" type="button" value=" Crear cuenta">
+                                    </td>
+                                </tr> 
+                                
+
+                            </table>
+                        </th>
+                    </tr>
+                </table>
+            </nav>
+        </section>
+    </form>
+            <!-- Pie de la pagina -->
+    <footer>
+        <p>2023 FUTURE Videojuegos. Todos los derechos reservados ©</p>
+    </footer>
+</body>
+</html>
