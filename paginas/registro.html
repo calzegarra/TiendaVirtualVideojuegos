@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Crear Cuenta</title>
     <script src="../js/efectos.js"></script>
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
                     <th></th>
                     <th>
                         <ul class="menup">
-                            <li><a href="#">Inciar sesión</a></li>
+                            <li><a href="login.html">Inciar sesión</a></li>
                         </ul>
                     </th>
                 </tr>
@@ -47,75 +47,63 @@
             </table>
         </section>
     </div>
-    <!-- Cuerpo del -->
-    <!-- Seccion Login -->
-    <form action="">
+    <!-- Seccion Crear Cuenta -->
+    <form action="#" id="crearCuentaForm">
         <section class="section_3">
             <nav>
                 <table class="login_box" border="0">
                     <tr>
                         <th>
-                            <h2 class="subtitle">INICIAR SESION</h2>
+                            <h2 class="subtitle">CREAR CUENTA</h2>
                         </th>
                         <th></th>
                     </tr>
                     <tr>
                         <th>
                             <table border="0">
-                                <tr style="text-align: left;">
-                                    <td></td>
-                                    <td rowspan="4"
-                                        style="text-align: center;font-family: 'Press Start 2P', cursive;font-size: 14px;">
-                                        <h1>¿Primera vez <br><br>
-                                            en FUTURE?</h1>
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="Nombres" class="special_textbox"
+                                            id="txtNombres">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="Apellidos" class="special_textbox"
+                                            id="txtApellidos">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input type="text" placeholder="Usuario" class="special_textbox"
-                                            id="txtusuario">
+                                        <input type="text" placeholder="DNI" class="special_textbox" id="txtDNI">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="Dirección" class="special_textbox"
+                                            id="txtDireccion">
                                     </td>
                                 </tr>
-                                <tr style="text-align: left;">
-                                    <td></td>
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="Correo" class="special_textbox" id="txtCorreo">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="Usuario" class="special_textbox"
+                                            id="txtNuevoUsuario">
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <input type="password" placeholder="Contraseña" class="special_textbox"
-                                            id="txtclave">
+                                            id="txtNuevaClave">
                                     </td>
-                                </tr>
-
-                                <tr>
                                     <td>
-                                        <input type="checkbox" name="rdRecordar" value="Olvide mi contraseña"
-                                            id="rdRecordar">Olvide mi contraseña
-                                    </td>
-
-                                    <td style="text-align: center;" colspan="2">
-                                        <input style="display: none; text-align: center;" class="button_1" type="button"
-                                            id="btnEnviarCorreo" value="Enviar correo" onclick="validarCorreo(this)">
-
+                                        <input type="password" placeholder="Confirmar Contraseña"
+                                            class="special_textbox" id="txtConfirmarClave">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="text-align: center;" colspan="2">
-                                        <label for="rdRecordar" id="lbladv">* Se enviará un correo, solo si el usuario
-                                            existe</label>
+                                    <td colspan="2" style="text-align: right;">
+                                        <input class="button_1" type="submit" value="Crear Cuenta">
                                     </td>
                                 </tr>
-
-                                <tr>
-                                    <td style="text-align: right;">
-                                        <input class="button_1" type="button" value="Iniciar Sesión"
-                                            onclick="Autenticar(this)">
-                                    </td>
-                                    <td style="text-align: right;">
-                                        <a href="registro.html" class="button_1">Crear cuenta</a>
-                                    </td>
-                                </tr>
-
-
                             </table>
                         </th>
                     </tr>
