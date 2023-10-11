@@ -83,9 +83,7 @@ function validarCorreo() {
 
 
 // Nueva función para la creación de cuentas
-document.getElementById('crearCuentaForm').addEventListener('submit', function (event) {
-  event.preventDefault();
-
+function validarCampos() {
   let nombres = document.getElementById('txtNombres').value;
   let apellidos = document.getElementById('txtApellidos').value;
   let dni = document.getElementById('txtDNI').value;
@@ -96,26 +94,10 @@ document.getElementById('crearCuentaForm').addEventListener('submit', function (
   let confirmarClave = document.getElementById('txtConfirmarClave').value;
 
   if (nombres.trim() === '' || apellidos.trim() === '' || dni.trim() === '' || direccion.trim() === '' || correo.trim() === '' || nuevoUsuario.trim() === '' || nuevaClave.trim() === '' || confirmarClave.trim() === '') {
-    alert("Por favor, complete todos los campos.");
-    return;
+      alert("Por favor, debe completar todos los campos.");
+  } else if (nuevaClave !== confirmarClave) {
+      alert("Las contraseñas no coinciden. Intente nuevamente.");
+  } else {
+      alert("Registro exitoso. ¡Bienvenido a FUTURE!");
   }
-
-  if (nuevaClave !== confirmarClave) {
-    alert("Las contraseñas no coinciden. Intente nuevamente.");
-    return;
-  }
-
-  // lógica para enviar los datos de creación de cuenta al servidor
-
-  alert("Cuenta creada exitosamente. ¡Bienvenido a FUTURE!");
-
-  // Limpia los campos después de crear la cuenta
-  document.getElementById('txtNombres').value = '';
-  document.getElementById('txtApellidos').value = '';
-  document.getElementById('txtDNI').value = '';
-  document.getElementById('txtDireccion').value = '';
-  document.getElementById('txtCorreo').value = '';
-  document.getElementById('txtNuevoUsuario').value = '';
-  document.getElementById('txtNuevaClave').value = '';
-  document.getElementById('txtConfirmarClave').value = '';
-});
+}
