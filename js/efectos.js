@@ -94,7 +94,7 @@ function validarCampos() {
   let confirmarClave = document.getElementById('txtConfirmarClave').value;
 
   if (nombres.trim() === '' || apellidos.trim() === '' || dni.trim() === '' || direccion.trim() === '' || correo.trim() === '' || nuevoUsuario.trim() === '' || nuevaClave.trim() === '' || confirmarClave.trim() === '') {
-      alert("Por favor, complete todos los campos.");
+      alert("Por favor, debe completar todos los campos.");
   } else if (nuevaClave !== confirmarClave) {
       alert("Las contraseñas no coinciden. Intente nuevamente.");
   } else {
