@@ -8,6 +8,17 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+  const checkDesc = document.getElementById('checkDesc');
+  const txtdescuento = document.getElementById('txtDesc');
+
+  checkDesc.addEventListener('change', function () {
+    txtdescuento.style.display = checkDesc.checked ? 'block' : 'none';
+  });
+});
+
+
 function Autenticar() {
   let usuario = document.getElementById('txtusuario').value;
   let pass = document.getElementById('txtclave').value;
@@ -99,5 +110,26 @@ function validarCampos() {
       alert("Las contraseñas no coinciden. Intente nuevamente.");
   } else {
       alert("Registro exitoso. ¡Bienvenido a FUTURE!");
+  }
+}
+
+
+// Nueva función para la creación de productos
+function validarRegistro() {
+  let nombre = document.getElementById('txtNombre').value;
+  let categoria = document.getElementById('cboCategoria').value;
+  let tipoConsola = document.getElementById('cboTipoConsola').value;
+  let precio = document.getElementById('txtPrecio').value;
+  let tieneDesc = document.getElementById('checkDesc'); 
+  let descuento = document.getElementById('txtDesc').value;
+  let descripcion = document.getElementById('txtDescripcion').value;
+
+  if (nombre.trim() === '' || categoria.trim() === '' || tipoConsola.trim() === '' || precio.trim() === '' || descripcion.trim() === '' ) {
+      alert("Por favor, debe completar todos los campos.");
+  } else if (tieneDesc.checked === false){
+      descuento === 0;
+      alert("Registro exitoso del videojuego "+ nombre + ", sin descuento.");
+  } else {
+    alert("Registro exitoso del videojuego "+ nombre + ", con descuento del " + descuento +"%");
   }
 }
