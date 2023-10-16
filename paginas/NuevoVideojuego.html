@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta</title>
+    <script src="../js/efectos.js"></script>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+    </header>
+    <!-- Cabecera -->
+    <div class="head">
+        <section class="section_header">
+            <table class="center">
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th>
+                        <ul class="menup">
+                            <li><a href="login.html">Inciar sesión</a></li>
+                        </ul>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h1 class="titulo">Future</h1><br>
+                        <h2 style="font-family: 'Press Start 2P', cursive;">Explora nuevos mundos virtuales</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2">
+                        <ul class="menup">
+                            <li><a href="../index.html">Tienda</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Contáctenos</a></li>
+                            <li><a href="../NuevoVideojuego.html">Nuevo Videojuego</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
+    <!-- Seccion Nuevo Videojuego -->
+    <form action="#" id="crearCuentaForm">
+        <section class="section_3">
+            <nav>
+                <table class="login_box" border="0">
+                    <tr>
+                        <th>
+                            <h2 class="subtitle">NUEVO VIDEOJUEGO</h2>
+                        </th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <table border="0">
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="text" placeholder="Nombre del Juego" class="special_textbox"
+                                            id="txtNombre">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td  colspan="2" class="special_textbox" style="text-align: left;" >
+                                        <select id="cboCategoria">
+                                            <option value="0">Seleccione la Categoría</option>
+                                            <option value="1">Acción</option>
+                                            <option value="2">Plataformas</option>
+                                            <option value="3">Disparos</option>
+                                            <option value="4">Artes Marciales</option>
+                                            <option value="5">Multijugador</option>
+                                            <option value="6">Aventuras</option>
+                                            <option value="7">Rol</option>
+                                            <option value="8">Buena Trama</option>
+                                            <option value="9">Novela Visual</option>
+                                            <option value="10">Citas</option>
+                                            <option value="11">Carreras</option>
+                                            <option value="12">Deportes</option>
+                                          </select>
+                                    </td>   
+                                </tr>
+                                <tr>
+                                    <td  colspan="2" class="special_textbox" style="text-align: left;">
+                                        <select id="cboTipoConsola">
+                                            <option value="0">Tipo de Consola</option>
+                                            <option value="1">Playstation 3</option>
+                                            <option value="2">Playstation 4</option>
+                                            <option value="3">Playstation 5</option>
+                                            <option value="4">Xbox</option>
+                                            <option value="5">PC</option>
+                                            <option value="6">Nintendo</option>
+                                          </select>
+                                    </td>   
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="text" placeholder="Precio" class="special_textbox"  id="txtPrecio">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" class="label_desc" name="checkDesc" id="checkDesc">Tiene descuento?
+                                    </td>
+                                    <td style="text-align: center;" class="subtitle">
+                                        <input style="display: none;" class="special_textbox" type="text" id="txtDesc" placeholder="Porcentaje del descuento" onclick="Autenticar(this)">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <h5 class="label_desc" style="text-align: left;">Descripcion del Juego</h5>
+                                        <textarea id="txtDescripcion" rows="4" class="special_textbox" cols="50"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td colspan="2" style="text-align: right;">
+                                        <input class="button_1" type="submit" value="Registrar" onclick="validarRegistro()" id="btnRegistrarVideojuego">
+                                    </td>
+                                </tr>
+                            </table>
+                        </th>
+                    </tr>
+                </table>
+            </nav>
+        </section>
+    </form>
+    <!-- Pie de la pagina -->
+    <footer>
+        <p>2023 FUTURE Videojuegos. Todos los derechos reservados ©</p>
+    </footer>
+</body>
+
+</html>
