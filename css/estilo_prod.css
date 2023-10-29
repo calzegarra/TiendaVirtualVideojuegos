@@ -1,0 +1,42 @@
+.vgtitle {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.vgprice {
+    font-size: 16px;
+    color: #fff;
+    padding: 15px 32px 10px 10px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #171a21; 
+}
+.vgdescription{
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+    padding-bottom: 50px;
+}
+.btncarrito {
+    background-color: #00b7ff8e; 
+    background-image: url("../iconos/carrito-2.png") no-repeat;
+    background-repeat: no-repeat;
+    background-position: left;
+    border: none;
+    transition-duration: 0.4s;
+    color: #171a21;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.btncarrito:hover {
+    background-color: #171a21; 
+    color: white;
+  }

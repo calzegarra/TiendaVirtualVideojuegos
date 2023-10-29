@@ -6,6 +6,21 @@ body {
     background-size: cover;
     
 }
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: orange;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: blue;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid orange;  /* creates padding around scroll thumb */
+}
+
 .head {
     background: url("../imagenes/banner.jpg");
     background-size: cover;
@@ -128,12 +143,10 @@ iframe {
 .section {
     margin-bottom: 20px;
     padding: 60px;
-
 }
 .sub_container {
-    width: 700px;
+    width: 1000px;
     height: 500px;
-    padding: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -230,9 +243,6 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
   }
-  
-  
-  /* arrows */
   
   select.classic {
     background-image:
@@ -344,3 +354,50 @@ select {
     color: transparent;
     text-shadow: 0 0 0 #000;
   }
+
+/* Estilos para el diseño del pop up */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Estilo del popup */
+.popup {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  max-width: 80%;
+  position: relative;
+}
+
+/* Botón de cierre */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #888;
+}
+
+/* Título del popup */
+.popup h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Contenido del popup */
+.popup p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
