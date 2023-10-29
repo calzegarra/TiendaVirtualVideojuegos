@@ -55,6 +55,6 @@
         <p>2023 FUTURE Videojuegos. Todos los derechos reservados ©</p>
     </footer>
     <script src="js/arrayNintendo.js"></script>
-    <script src="js/arrayNintendo.js"></script>
+    <script src="js/arrayPlayStation.js"></script>
 </body>
 </html>
