@@ -27,7 +27,7 @@
                 <ul>
                     <li><a href="paginas/PC.html" target="iframe_contenido">Juegos para PC</a></li>
                     <li><a href="paginas/Playstation.php" target="iframe_contenido">Juegos para PS</a></li>
-                    <li><a href="paginas/Xbox.html" target="iframe_contenido">Juegos para Xbox</a></li>
+                    <li><a href="paginas/Xbox.php" target="iframe_contenido">Juegos para Xbox</a></li>
                     <li><a href="paginas/nintendo.php" target="iframe_contenido">Juegos para Nintendo</a></li>
                     <li><a href="paginas/proxLanzamiento.html" target="iframe_contenido">Próximos lanzamientos</a></li>
                 </ul>
@@ -56,5 +56,6 @@
     </footer>
     <script src="js/arrayNintendo.js"></script>
     <script src="js/arrayPlayStation.js"></script>
+    <script src="js/arrayXbox.js"></script>
 </body>
 </html>
